@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: rips/rips-cli:3
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - run: rips-cli -vvv rips:scan:start -a $RIPS_APP_ID -p ~/repo/ -t 1
