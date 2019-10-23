@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: rips/rips-cli:3
 
-    working_directory: ~/repo
+    working_directory: ~/Juliet-Test-Suite
 
     steps:
       - checkout
